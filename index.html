@@ -7,53 +7,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fabian Fritz</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <header>
         <div class="header-about">
-            <a href="about.html">ABOUT&nbsp;ME</a>
+            <a id="link-about" href="about.html">ABOUT&nbsp;ME</a>
         </div>
         <div class="header-logo">
             <h1>fritzfabi</h1>
         </div>
     </header>
 
-    <div id="main">
+    <div id="start-popup">
         <div id="pop-up">
             <div class="popup-header">
-                <button noclick="closePopup()" id="popup-close">&times;</button>
+                <button noclick="closePopup()" id="popup-close" class="popup-close">&times;</button>
                 <h1>Kurze Info</h1>
             </div>
-            <p>
-                Die Website befindet sich noch im Aufbau. 
-                Ich versuche die Website, so schnell wie möglich, 
-                mit meinen persönlichen Projekten und den Projekten 
-                der nächsten Semester zu befüllen. 
+            <p id="popup-text">
+                Die Website ist 100% selbst gecodet und befindet sich noch im Aufbau.
+                Ich versuche die Website, so schnell wie möglich,
+                mit meinen persönlichen Projekten und den Projekten
+                der nächsten Semester zu befüllen.
                 Es kann noch zu Bugs kommen.
             </p>
         </div>
     </div>
 
-    <main>
+    <section class="welcome-screen">
         <section class="hello-there">
-
+            <p class="text-big" id="ht1">Hi!</p>
+            <p id="ht2">Ich bin Fabian.</p>
+            <p id="ht3">Student</p>
+            <p class="text-small" id="ht4">an der Hochschule Furtwangen University</p>
+            <p class="text-big" id="ht5">Onliner</p>
+            <p class="text-big" id="ht6">Sportler</p>
+            <p id="ht7">Abenteurer</p>
+            <p id="ht8">Hobbykoch</p>
+            <p class="text-big" id="ht9">Freund</p>
+            <div class="line-vert"></div>
+            <p id="scroll-to-projects"> Skills & Projekte</p>
         </section>
-        <div class="content-card-l">
-            <h2 class="content-header">Web Development</h2>
-            <p class="sem1">1. Semester: Java</p>
-            <p class="sem2">2. Semester:</p>
-            <ul>
-                <li>Javascript/Typescript</li>
-                <li>HTML</li>
-                <li>CSS</li>
-            </ul>
-        </div>
-        <div class="content-card-r">
-            <h2 class="content-header">3D Modelling</h2>
-        </div>
-    </main>
-    <script src="script.js"></script>
+    </section>
+
+    <section class="projects">
+        <section class="content-gis">
+            <h1 class="content-header">Webdevelopment</h1>
+            <img class="img-round-l" src="java.png" alt="JAVA graphic">
+            <img class="img-round-r" src="htmlcssjs.png" alt="HTML & CSS graphic">
+            <div class="content-java">
+                <h1 class="text-small">Java</h1>
+                <p class="content-text">
+                    Studiengang OnlineMedien, 1. Semester<br><br>
+                    Themenbereiche:<br>Variablentypen, Operatoren...<br>
+                    if-else-Anweisungen, for & while-Schleifen, Arrays...<br>
+                    Methoden, Klassen, Konstruktoren, Exceptions...<br>
+                    Vererbung, Up & Down-Casting, Abstrakte Klassen & Interfaces...
+                </p>
+                <a class="external-link" href="https://github.com/gitbofi/Abgabe1.FabianFritzOMB"
+                    target="_blank"><br>zum Github Repository &nbsp;&nbsp;&nbsp; &#8599;</a>
+            </div>
+            <div class="content-htmlcssjs">
+                <h1 class="text-small">HTML, CSS and Javascript/Typescript</h1>
+                <p class="content-text">
+                    Studiengang OnlineMedien, 2. Semester<br><br><br>
+                    Meine erste Website habe ich parallel zu einem HTML-Kurs auf<br>LinkedIn-Learning gebaut,
+                    mit dem Ziel, jedes vorgestellte<br>HTML-Element mindestens einmal zu verwenden.<br>
+                    <a class="external-link" href="https://fritzfabi.com/GIS-Prax-WiSe21-22/OFF TOPIC/index.html"
+                        target="_blank"><br>Pure HTML Website &nbsp;&nbsp;&nbsp; &#8599;</a><br><br>
+                <div class="line-hor"></div>
+                Meine Projekt-Seite aus dem WebDev-Kurs im 2. Semester<br>
+                beinhaltet momentan HTML, CSS und Javascript-Code.<br>
+                <a class="external-link" href="https://fritzfabi.com/GIS-Prax-WiSe21-22/A4%20und%205/index.html"
+                    target="_blank"><br>Projekt Website aus dem Studium &nbsp;&nbsp;&nbsp; &#8599;</a><br><br>
+                <div class="line-hor"></div>
+                Alle Aufgaben sind natürlich in meinem Github Repository zu finden.<br>
+                <a class="external-link" href="https://github.com/gitbofi/GIS-Prax-WiSe21-22" target="_blank"><br>zum
+                    Github Repository &nbsp;&nbsp;&nbsp; &#8599;</a>
+                </p>
+            </div>
+            <!-- <h1>3D-Modellierung</h1>
+            <h1>User Experience Design</h1>
+            <h1>Videoproduktion</h1> -->
+        </section>
+        <section class="content3d">
+            <h1 class="content-header-wh">3D-Modellierung</h1>
+            <section aria-label="Newest Photos">
+                <div class="carousel" data-carousel>
+                    <button class="carousel-button prev" data-carousel-button="prev">&#171;</button>
+                    <button class="carousel-button next" data-carousel-button="next">&#187;</button>
+                    <ul data-slides>
+                        <li class="slide" data-active>
+                            <img src="wgzimmer2.png" alt="WG Zimmer Render">
+                        </li>
+                        <li class="slide">
+                            <img src="Schild_und_Schwert.png" alt="Nature Image #2">
+                        </li>
+                        <li class="slide">
+                            <img src="Schwert_und_Stein_Render.png" alt="Nature Image #3">
+                        </li>
+                        <li class="slide">
+                            <img src="wgzimmer.png" alt="Nature Image #3">
+                        </li>
+                        <li class="slide">
+                            <img src="Schwert_und_Stein_Render.png" alt="Nature Image #3">
+                        </li>
+                        <li class="slide">
+                            <img src="Schwert_und_Stein_Render.png" alt="Nature Image #3">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <p class="text-3d">
+                Die Möbelstücke und mein WG-Zimmer (still work in progress) habe ich zum Spaß<br>
+                in meiner Freizeit modelliert und teilweise animiert.
+                Die Grafiken zu Schwert, Schild und Katapult sind im Rahmen der Vorlesung<br>
+                3D-Modellierung im 2. Semester OnlineMedien entstanden.<br>
+            </p>
+        </section>
+    </section>
+
 </body>
 
 </html>
