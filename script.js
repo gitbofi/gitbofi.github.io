@@ -1,9 +1,10 @@
+// Start Popup
+
 var closeBtn = document.getElementById("popup-close");
 
 closeBtn.onclick = function() {
-  document.getElementById("main").style.display = "none";
+  document.getElementById("start-popup").style.display = "none";
 }
-
 
 const buttons = document.querySelectorAll("[data-carousel-button]")
 
