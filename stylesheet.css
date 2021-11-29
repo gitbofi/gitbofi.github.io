@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100&family=Raleway:wght@200;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100&family=Raleway:wght@200;600;800&display=swap');
 
 * {
     padding: 0;
@@ -10,13 +10,13 @@ body {
     cursor: default;
     font-family: 'Raleway', 'sans-serif';
     font-weight: 200;
-    font-size: 1.5em;
+    font-size: 2rem;
     background: rgb(120,120,201);
     background: linear-gradient(180deg, rgba(120,120,201,1) 8%, rgba(205,204,218,1) 42%, rgba(205,204,218,1) 100%);
 }
 
 header{
-    width: 100vw;
+    width: 100%;
     height: 10vh;
 
     display: grid;
@@ -49,29 +49,26 @@ header{
     text-align: center;
 }
 
-main {
-    width: 100vw;
-    height: 100vw;
+.welcome-screen {
+    width: 100%;
 
     display: grid;
 
-    grid-template-columns: 50px 1fr 1fr 1fr 50px; /* andere Möglichkeit: repeat(3, 1fr); */
-    grid-template-rows: 50px 500px 500px;
-
-    gap: 10px;
+    grid-template-columns: 3rem 1fr 1fr 1fr 3rem; /* andere Möglichkeit: repeat(3, 1fr); */
+    grid-template-rows: 833px;
 
     box-sizing: border-box;
 }
 
 .container div {
     padding: 10px;
-    /* border: 1px solid black; */
 }
 
 a, a:visited {
     text-decoration: none;
     color: inherit;
     transition: all .2s ease-in;
+    font-weight: 200;
 }
 
 a:hover {
@@ -80,63 +77,26 @@ a:hover {
     letter-spacing: 5px;
 }
 
-.content-card-l {
-    grid-row: 2 / span 1;
-    grid-column: 1 / span 3;
-
-    margin: 20px 20px 20px 0;
-    background: whitesmoke;
-    transition: all .2s ease-in;
-    border-radius: 0 50px 50px 0;
-    text-align: center;
-    font-weight: bold;
-}
-
-.sem1 {
-    text-align: left;
-    padding: 20px 0 0 100px;
-}
-
-.sem2 {
-    text-align: right;
-    padding: 20px 100px 0 0;
-}
-
-.content-card-r {
-    grid-row: 3 / span 1;
-    grid-column: 3 / span 3;
-
-    margin: 20px 0px 20px 20px;
-    background: whitesmoke;
-    transition: all .2s ease-in;
-    border-radius: 50px 0 0 50px;
-}
-
-.content-card-l:hover {
-    margin: 0;
-    color: #000;
-}
-
-.content-card-r:hover {
-    margin: 0;
-    color: #000;
-}
-
-.content-header {
-    text-align: center;
-    color: #161925;
-    padding: 20px;
+a.external-link {
     font-weight: 600;
-    font-size: 1.75em;
+    color: rgba(120,120,201,1);
 }
 
-#main {
+a.external-link:hover {
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    
+}
+
+#start-popup {
     width: 100%;
     height: 100%;
     background: #0008;
     position: absolute;
     top: 0;
     left: 0;
+    position: fixed;
+    z-index: 10;
 }
 
 #pop-up {
@@ -154,6 +114,8 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    position: fixed;
+    z-index: 11;
 }
 
 .popup-header {
@@ -164,21 +126,255 @@ a:hover {
     padding: 50px 0 50px 50px;
 }
 
-#popup-close {
-    font-size: 2em;
+.popup-close {
+    font-size: 3rem;
     border: none;
     background: none;
     color: #161925;
-    margin: 20px;
+    margin: 1rem;
     cursor: pointer;
-    transition: all .2s ease-in;
+    -webkit-transition: -webkit-transform .4s ease-in-out;
+    transition: transform .2s ease-in-out;
 }
 
-#popup-close:hover {
+.popup-close:hover {
     color: crimson;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
-.pop-up, p {
-    padding: 30px 100px 30px 100px;
-    margin-top: 100px;
+.pop-up, #popup-text {
+    padding: 10px 100px 30px 100px;
+    margin-top: 3.5rem;
+    text-align: justify;
 }
+
+.text-big {
+    font-size: 10rem;
+    font-weight: 700;
+}
+
+.text-small {
+    font-size: 3rem;
+}
+
+.content-header {
+    font-size: 7rem;
+    margin: 4rem 0 0 38.5rem;
+}
+
+.content-header-wh {
+    color: white;
+    font-size: 7rem;
+    margin: 4rem 0 0 27rem;
+}
+
+.hello-there {
+    grid-column: 2 / span 3;
+    color: white;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+#ht1 {
+    position: absolute;
+    top: 18rem;
+    left: 25rem;
+}
+#ht2 {
+    position: absolute;
+    top: 28rem;
+    left: 25.4rem;
+}
+#ht3 {
+    position: absolute;
+    top: 19rem;
+    left: 39rem;
+}
+#ht4 {
+    position: absolute;
+    top: 24.5rem;
+    left: 39rem;
+}
+#ht5 {
+    position: absolute;
+    top: 27rem;
+    left: 61.5rem;
+}
+#ht6 {
+    position: absolute;
+    top: 9.5rem;
+    left: 54rem;
+}
+#ht7 {
+    position: absolute;
+    top: 33rem;
+    left: 15rem;
+}
+#ht8 {
+    position: absolute;
+    top: 13rem;
+    left: 15rem;
+}
+#ht9 {
+    position: absolute;
+    top: 37rem;
+    left: 20rem;
+}
+
+.line-vert {
+    width: 47px;
+    height: 55px;
+    border-right: 2px solid rgba(120,120,201,1);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.line-hor {
+    width: 64rem;
+    height: 5px;
+    border-top: 2px solid rgba(120,120,201,1);
+    margin: 2rem 0 2rem 0;
+}
+
+#scroll-to-projects {
+    position: absolute;
+    left: 5rem;
+    bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(120,120,201,1);
+}
+
+.projects {
+    width: 100%;
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 3rem 1fr 1fr 1fr 3rem; /* andere Möglichkeit: repeat(3, 1fr); */
+    grid-template-rows: 109rem 75rem 500px;
+
+    box-sizing: border-box;
+}
+
+.content-gis {
+    grid-column: 1 / span 5;
+    grid-row: 1 / span 1;
+    background: white;
+}
+
+.content3d {
+    grid-column: 1 / span 5;
+    grid-row: 2 / span 1;
+    background: rgb(120,120,201);
+}
+
+.img-round-l {
+    margin: 3rem 0 0 0;
+    position: absolute;
+    left: -5rem;
+}
+
+.img-round-r {
+    margin: 3rem 0 0 0;
+    position: absolute;
+    right: 0rem;
+    top: 110rem;
+}
+
+.content-java {
+    padding: 5rem 0 0 5rem;
+    position: absolute;
+    left: 35rem;
+    font-weight: 600;
+}
+
+.content-htmlcssjs {
+    padding: 5rem 0 0 5rem;
+    position: absolute;
+    top: 105rem;
+    left: 10rem;
+    font-weight: 600;
+}
+
+.text-3d {
+    position: absolute;
+    left: 21rem;
+    top: 227rem;
+    font-weight: 600;
+}
+
+/* //////////////////////////////// */
+
+.carousel {
+    margin-top: 5rem;
+    width: 100rem;
+    height: 40rem;
+    position: absolute;
+    left: 8rem;
+  }
+  
+  .carousel > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    left: 14rem;
+  }
+  
+  .slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+  }
+  
+  .slide > img {
+    display: block;
+    width: 70rem;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .slide[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, .1);
+  }
+  
+  .carousel-button:hover,
+  .carousel-button:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+  }
+  
+  .carousel-button:focus {
+    outline: 1px solid black;
+  }
+  
+  .carousel-button.prev {
+    left: 1rem;
+  }
+  
+  .carousel-button.next {
+    right: 1rem;
+  }
