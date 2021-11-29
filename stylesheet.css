@@ -388,7 +388,7 @@ a.external-link:hover {
     transition-delay: 200ms;
   }
   
-  .slide > img {
+  .slide > img, video{
     display: block;
     width: 70rem;
     height: auto;
