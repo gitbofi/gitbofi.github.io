@@ -160,7 +160,7 @@ a.external-link:hover {
 
 .content-header {
     font-size: 7rem;
-    margin: 4rem 0 0 38.5rem;
+    margin: 6rem 0 0 38.5rem;
 }
 
 .content-header-wh {
@@ -254,7 +254,7 @@ a.external-link:hover {
     display: grid;
 
     grid-template-columns: 3rem 1fr 1fr 1fr 3rem; /* andere Möglichkeit: repeat(3, 1fr); */
-    grid-template-rows: 109rem 75rem 500px;
+    grid-template-rows: 109rem 75rem 100rem;
 
     box-sizing: border-box;
 }
@@ -304,16 +304,72 @@ a.external-link:hover {
     left: 21rem;
     top: 227rem;
     font-weight: 600;
+    color: white;
+}
+
+.content-ux {
+    grid-column: 1 / span 5;
+    grid-row: 3 / span 1;
+    background-color: white;
+}
+
+.img-uxlogo {
+    width: 25rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 267rem;
+    right: 10rem;
+}
+
+.text-container-l {
+    margin: 5rem 0 0 20rem;
+    font-weight: 600;
+    width: 55rem;
+}
+
+.text-container-r {
+    margin: 10rem 0 0 58rem;
+    width: 50rem;
+    font-weight: 600;
+}
+
+.text-container-l > .line-hor {
+    width: 55rem;
+    border-top: 2px solid #2FBC71;
+}
+
+.text-container-r > .line-hor {
+    width: 47rem;
+    border-top: 2px solid #2FBC71;
+}
+
+.content-ux > .line-hor {
+    margin-left: 20rem;
+    width: 85rem;
+    border-top: 2px solid #2FBC71;
+}
+
+.img-iphone {
+    position: absolute;
+    margin-left: 20rem;
+    width: 30rem; 
+}
+
+.tobecontinued {
+    color: white;
+    font-size: 5.5rem;
+    margin: 13rem 0 0 58rem;
 }
 
 /* //////////////////////////////// */
 
 .carousel {
     margin-top: 5rem;
-    width: 100rem;
+    width: 99rem;
     height: 40rem;
     position: absolute;
     left: 8rem;
+
   }
   
   .carousel > ul {
@@ -338,6 +394,7 @@ a.external-link:hover {
     height: auto;
     object-fit: cover;
     object-position: center;
+    border-radius: 1rem;
   }
   
   .slide[data-active] {
@@ -357,20 +414,16 @@ a.external-link:hover {
     color: rgba(255, 255, 255, .5);
     cursor: pointer;
     border-radius: .25rem;
-    padding: 0 .5rem;
-    background-color: rgba(0, 0, 0, .1);
+    padding: 0 1.5rem .5rem 1.3rem;
+    transition: all .2s ease;
   }
   
-  .carousel-button:hover,
-  .carousel-button:focus {
+  
+  .carousel-button:hover {
     color: white;
-    background-color: rgba(0, 0, 0, .2);
-  }
-  
-  .carousel-button:focus {
-    outline: 1px solid black;
-  }
-  
+    font-size: 5rem;
+  }  
+
   .carousel-button.prev {
     left: 1rem;
   }
