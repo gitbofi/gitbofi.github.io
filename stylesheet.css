@@ -169,8 +169,8 @@ header{
 
     display: grid;
 
-    grid-template-columns: 3rem 1fr 1fr 1fr 3rem; /* andere Möglichkeit: repeat(3, 1fr); */
-    /*grid-template-rows: 90vh;*/
+    grid-template-columns: 5vw 1fr 1fr 1fr 5vw; /* andere Möglichkeit: repeat(3, 1fr); */
+    grid-template-rows: 90vh;
 
     box-sizing: border-box;
 }
@@ -216,8 +216,8 @@ a.external-link:hover {
 #pop-up {
     text-align: center;
     display: flex;
-    width: 1000px;
-    height: 400px;
+    width: 60vw;
+    height: 40vh;
     background: whitesmoke;
     box-sizing: border-box;
     padding:inherit 20px;
@@ -264,12 +264,12 @@ a.external-link:hover {
 }
 
 .text-big {
-    font-size: 10rem;
+    font-size: 9vw;
     font-weight: 700;
 }
 
 .text-small {
-    font-size: 3rem;
+    font-size: 2.5vw;
 }
 
 .content-header {
@@ -284,57 +284,58 @@ a.external-link:hover {
 }
 
 .hello-there {
+    max-width: 90vw; 
     grid-column: 2 / span 3;
     color: white;
     font-weight: bold;
-    font-size: 5rem;
-    min-height: 90vh;
+    font-size: 4.5vw;
+    /*min-height: 90vh;*/
 }
 
 #ht1 {
     position: absolute;
-    top: 18rem;
-    left: 25rem;
+    top: 32vh;
+    left: 20vw;
 }
 #ht2 {
     position: absolute;
-    top: 28rem;
-    left: 25.4rem;
+    top: 51vh;
+    left: 20.4vw;
 }
 #ht3 {
     position: absolute;
-    top: 19rem;
-    left: 39rem;
+    top: 34.8vh;
+    left: 32.5vw;
 }
 #ht4 {
     position: absolute;
-    top: 24.5rem;
-    left: 39rem;
+    top: 45.2vh;
+    left: 32.5vw;
 }
 #ht5 {
     position: absolute;
-    top: 27rem;
-    left: 61.5rem;
+    top: 50vh;
+    left: 52vw;
 }
 #ht6 {
     position: absolute;
-    top: 9.5rem;
-    left: 54rem;
+    top: 18vh;
+    left: 45vw;
 }
 #ht7 {
     position: absolute;
-    top: 33rem;
-    left: 15rem;
+    top: 59vh;
+    left: 12vw;
 }
 #ht8 {
     position: absolute;
-    top: 13rem;
-    left: 15rem;
+    top: 25vh;
+    left: 11vw;
 }
 #ht9 {
     position: absolute;
-    top: 37rem;
-    left: 20rem;
+    top: 66vh;
+    left: 16vw;
 }
 
 .line-vert {
