@@ -19,7 +19,7 @@ body {
     cursor: default;
     font-family: 'Raleway', 'sans-serif';
     font-weight: 200;
-    font-size: 2rem;
+    font-size: 1.8vw;
     background: rgb(120,120,201);
     background: linear-gradient(180deg, rgba(120,120,201,1) 8%, rgba(205,204,218,1) 83%, rgba(205,204,218,1) 100%);
 }
@@ -40,63 +40,64 @@ body {
     font-size: 2.5rem;
     transform: rotate(-90deg);
     transition: all .5s ease-in-out;
-  }
+}
   
-  #myBtn:hover {
+#myBtn:hover {
     background-color: rgb(182, 182, 182); /* Add a dark-grey background on hover */
-  }
+}
 
 .content-about > p {
-    margin-bottom: 5rem;
+    margin: 1vw 0 1vw 0;
+    font-size: 1.3vw;
 }
 
 .about-container {
     background-color: white;
     margin: 10vh;
     grid-column: 2 / span 2;
-    border-radius: 1rem;
-    min-height: 70vh;
+    border-radius: 1vw;
+    min-height: 33vw;
 }
 
 .infos-person {
-    margin: 1.2vh;
     grid-column: 4 / span 1;
     color: white;
     font-weight: 600;
 }
 
 .infos-person > img {
-    margin: 5rem 0 2rem 0;
+    margin: 4.8vw 0 .5vw 0;
     grid-column: 4 / span 1;
-    border-radius: 1rem;
+    border-radius: 1vw;
     font-weight: 600;
+    height: 22vw;
 }
 
 #email, #tel {
-    margin-left: 1.8rem;
+    margin: 1vw 0 0 1.5vw;
 }
 
 
 #logo-whatsapp {
     position: absolute;
-    width: 12rem;
-    margin: 1rem 0 0 -.8rem;
+    width: 10vw;
+    margin: 1vw 0 0 -.8vw;
     transition: all .2s ease-in;
 }
 
 #logo-whatsapp:hover {
-    width: 13rem;
+    width: 11vw;
 }
 
 #logo-linkedin {
     position: absolute;
-    width: 10rem;
-    margin: 2rem 0 0 11.5rem;
+    width: 10vw;
+    margin: 1.6vw 0 0 9vw;
     transition: width .2s ease-in;
 }
 
 #logo-linkedin:hover {
-    width: 11rem;
+    width: 11vw;
 }
 
 .infos-person > a, .infos-person > p {
@@ -374,7 +375,7 @@ a.external-link:hover {
     display: grid;
 
     grid-template-columns: 3vw 1fr 1fr 1fr 3vw; /* andere Möglichkeit: repeat(3, 1fr); */
-    grid-template-rows: 100vw 70vw 90vw;
+    grid-template-rows: 100vw 80vw 90vw;
 
     box-sizing: border-box;
 }
@@ -420,8 +421,8 @@ a.external-link:hover {
 
 .text-3d {
     position: absolute;
-    left: 17vw;
-    top: 205vw;
+    left: 16vw;
+    top: 215vw;
     font-weight: 600;
     color: white;
 }
@@ -494,43 +495,39 @@ a.external-link:hover {
     top: 165vw;
     width: 80vw;
     position: absolute;
-    height: 75vh;
+    height: 100vh;
     overflow: hidden;
-
-  }
+}
   
-  .carousel > ul {
+.carousel > ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    position: absolute;
-    left: 8vw;
-    height: 40vw;
-  }
+}
   
-  .slide {
+.slide {
+    position: absolute;
     inset: 0;
     opacity: 0;
     transition: 200ms opacity ease-in-out;
     transition-delay: 200ms;
-    overflow: hidden;
-  }
+}
   
-  .slide > img, video{
+.slide > img, video{
     display: block;
-    width: 62vw;
     object-fit: cover;
     object-position: center;
     border-radius: 1vw;
-  }
+    width: 80vw;
+}
   
-  .slide[data-active] {
+.slide[data-active] {
     opacity: 1;
     z-index: 1;
     transition-delay: 0ms;
-  }
+}
   
-  .carousel-button {
+.carousel-button {
     position: absolute;
     z-index: 2;
     background: none;
@@ -542,19 +539,18 @@ a.external-link:hover {
     cursor: pointer;
     border-radius: .25rem;
     transition: all .2s ease;
-  }
+}
   
   
-  .carousel-button:hover {
+.carousel-button:hover {
     color: white;
     font-size: 5rem;
-  }  
+}  
 
-  .carousel-button.prev {
+.carousel-button.prev {
     left: 1rem;
-  }
+}
   
-  .carousel-button.next {
+.carousel-button.next {
     right: 1rem;
-  }
-
+}
